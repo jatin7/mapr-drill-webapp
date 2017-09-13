@@ -20,7 +20,7 @@ import javax.sql.DataSource;
 public class TestServlet extends HttpServlet
 {
 
-  @Resource(name = "java:jboss/datasources/DRILL-DS1")
+  @Resource(lookup = "java:/datasources/DRILL-DS1")
   DataSource ds;
 
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
